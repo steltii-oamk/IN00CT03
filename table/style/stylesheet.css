@@ -1,0 +1,29 @@
+thead {
+    padding: 0px;
+    text-align: center;
+    
+    background-color: #04AA6D;
+    color: white;
+}
+
+tbody {
+    padding-left: 16px;
+    text-align: center;
+}
+
+table {
+    border-collapse:collapse;
+    width: 30%;
+}
+
+td {
+    padding: 16px;
+    text-align: left;
+  }
+
+h3 {
+    padding-left: 16px;
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+    <link rel="stylesheet" href="style/stylesheet.css">
+
+</head>
+<body>
+    <div>
+        <h3>Tehtävän palautus</h3>
+        <form>
+            <div>
+                <label>Etunimi</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label>Sukunimi</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label>Sukupuoli</label>
+                <input type="radio" value="mies" name="sukupuoli" checked>
+                <label>Mies</label>
+                <input type="radio" value="nainen" name="sukupuoli">
+                <label>Nainen</label>
+            </div>
+            <div>
+                <label>Ryhnä</label>
+                <select>
+                    <option>TVT123</option>
+                    <option>TVT124</option>
+                    <option>TVT125</option>
+                </select>
+                <div>
+                    <label>Palauta tehtävä</label>
+                    <input type="file">
+                </div>
+                <div>
+                    <button>Lähetä</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
