@@ -1,0 +1,41 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    margin-bottom: 0.8em;
+}
+
+label{
+    display: block;
+}
+
+input[type=text], input[type=tel], input[type=email], select{
+    width: 33ch;
+    padding: 0.2em;
+}
+
+.required::after{
+    content: " *";
+    color: #ff0000;
+}
+
+input:invalid + span{
+    display: inline-block;
+    background: url('../images/invalid_small.png');
+    width: 12px;
+}
+
+input:valid + span{
+    display: inline-block;
+    background: url('../images/valid_small.png');
+    width: 12px;
+}
+
+input[type=checkbox] + label{
+    display: inline-block;
+}
+
+input[type=checkbox] + label::after{
+    content: " to my email";
+}
