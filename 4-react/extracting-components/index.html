@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiple simple components</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        const person = {
+            fname: 'Pekka',
+            lname: 'Koski',
+            address: {
+                street: 'Katu',
+                zip: '00000',
+                city: 'burger'
+            }
+        }
+
+
+        function Person(props) {
+            return (
+                <div>
+                    <h1>Hello!</h1>
+                    <h3>Your name and contact details are</h3>
+                    <p>{props.person.fname} {props.person.lname}</p>
+                    <Address address={props.person.address}/>    
+                </div>
+            )
+        }
+
+        function Address(props) {
+            return (
+                <p>
+                    {props.address.street} <br />
+                    {props.address.zip} {props.address.city}
+                </p>
+            )
+        }
+
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Person person={person} />);
+
+    </script>
+
+  </body>
+</html>
