@@ -1,0 +1,30 @@
+#content{
+  margin: 50px;
+}
+
+#content input{
+  display: block;
+  margin-top: 5px;
+  border: 2px inset #0bf74a;
+  width: 200px;
+}
+
+#content output{
+  display: block;
+  margin-top: 5px;
+  border: 2px inset #0bf74a;
+  width: 200px;
+}
+
+#form_age{
+  margin: 10px 0px;
+}
+
+#form_rate{
+  margin: 10px 0px;
+}
+
+button{
+  background-color: #0bf74a;
+  color: black;
+}
