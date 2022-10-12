@@ -1,81 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* global variables */
-:root{
-  --pink-primary: #f1356d;
-  --pink-secondary: #da2d61;
-  --pink-tertiary: #f51055;
-  --pink-dark: #700223;
-}
-
 /* base styles */
 * {
-  margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-#navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-#navbar h1 {
-  color: var(--pink-primary);
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-#navbar a {
-  margin-right: auto;
-}
-
-#navbar a {
-  color: #333;
-  margin-left: 16px;
+a{
   text-decoration: none;
-  padding: 6px;
+  color: gray;
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
-#navbar a:hover {
-  color: var(--pink-primary);
+.container {
+  margin-top: 50px;
 }
 
-#content {
-  max-width: 75%;
-  min-height: 100vh;
-  margin: 40px auto;
-  padding: 20px;
-  position: relative;
-}
-
-#content h2{
-  display: block;
-  font-size: 1.5em;
-  font-weight: bold;
+footer .container {
+  margin-top: 0;
 }
 
 footer{
-  margin-left:auto;
-  margin-right:auto;
+  position: fixed;
   bottom: 0;
-  height: 60px;
+  padding-top: 10px;
   width: 100%;
-}
-
-footer span{
-  font-weight: bold;
-  font-size: 125%;
-}
-
-footer .container-xl{
-  margin-top: 50px;
+  height: 60px;
+  border-top: 2px solid #f5f5f5;
+  background-size: cover;
   text-align: center;
-  padding: 20px;
-  border-top: 1px solid #f2f2f2;
-  max-width: 600px;
+  background-color: #333;
+  color: #fff;
+}
+
+#nav{
+  margin-bottom: 0!important;
+}
+
+#Header{
+  background-image: url(./banner.png);
+  height: 260px;
+  width: 100%;
+  background-size: cover;
 }
